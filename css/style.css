@@ -1,0 +1,320 @@
+body {
+  width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Co Headline Corp", "Arial", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.clothes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.clothes__image {
+  background-image: url(../img/banner-clothes.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 268px;
+  z-index: -2;
+}
+
+.clothes__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 268px;
+  width: 640px;
+  background-color: rgba(0, 18, 63, 0.49);
+  background: linear-gradient(to right, rgba(0, 18, 63, 0.49), rgba(0, 18, 63, 0));
+  z-index:-1;
+}
+
+.clothes__announce {
+  text-shadow: 0 0 230px rgba(0, 18, 63, 0.49);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  width: 300px;
+  height: 268px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.clothes__buttons {
+  display: flex;
+}
+
+.clothes__btn {
+  width: 320px;
+  box-sizing: border-box;
+  background-color: #005aab;
+  color: #fff;
+  height: 70px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.clothes__btn--border {
+  border-right: 1px solid #fff;
+}
+
+.layers {
+  margin-top: 30px;
+}
+
+.layers__background {
+  background-image: url(../img/banner-layers.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 375px;
+}
+
+.layers__text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.layers__caption {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25px;
+  text-shadow: 0 0 230px rgba(0, 18, 63, 0.49);
+  margin: 18px;
+  width: 220px;
+}
+
+.layers__feature {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.layers__feature::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -2px;
+  left: -35px;
+  background-repeat: no-repeat;
+}
+
+.layers__feature--1::before {
+  background-image: url(../img/spritesheet.png);
+}
+
+.layers__feature--2::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -30px;
+}
+
+.layers__feature--3::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -60px;
+}
+
+.btn {
+  height: 70px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  padding-top: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.btn--red {
+  background-color: #ff0000;
+}
+
+.banner {
+  margin-top: 30px;
+}
+
+.btn--grey {
+  background-color: #545454;
+  text-transform: uppercase;
+}
+
+.banner__image {
+  background-repeat: no-repeat;
+  height: 298px;
+}
+
+.banner__image--men-clothes {
+  background-image: url(../img/banner-men.jpg)
+}
+
+.banner__image--women-clothes {
+  background-image: url(../img/banner-women.jpg)
+}
+
+.banner__image--accessories {
+  background-image: url(../img/banner-accessories.jpg)
+}
+
+.banner__image--men-termo {
+  background-image: url(../img/banner-termo-m.jpg)
+}
+
+.banner__image--women-termo {
+  background-image: url(../img/banner-termo-w.jpg)
+}
+
+.banner__image--child-termo {
+  background-image: url(../img/banner-termo-ch.jpg)
+}
+
+.termo {
+  margin-top: 30px;
+}
+
+.termo__image {
+  background-repeat: no-repeat;
+  height: 456px;
+}
+
+.termo__image--extreme {
+  background-image: url(../img/banner-termo-extreme.jpg);
+}
+
+.termo__image--comfort {
+  background-image: url(../img/banner-termo-comfort.jpg);
+}
+
+.termo__caption {
+  color: #fff;
+  text-shadow: 0 0 230px rgba(0, 18, 63, 0.49);
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 380px;
+  padding: 25px;
+  margin-bottom: 255px;
+}
+
+.termo__text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+}
+
+.termo__category {
+  width: 330px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.termo__category--short {
+  width: 320px;
+}
+
+.termo__category span {
+  color: #54b948;
+}
+
+.termo__feature {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 12px;
+  position: relative;
+  width: 114px;
+}
+
+.termo__feature::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: -3px;
+  width: 50px;
+  height: 52px;
+  background-repeat: no-repeat;
+}
+
+.termo__feature--3,
+.termo__feature--5 {
+  width: 80px;
+}
+
+.termo__feature--1::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -311px;
+}
+
+.termo__feature--2::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -95px;
+}
+
+.termo__feature--3::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -149px;
+}
+
+.termo__feature--4::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -311px;
+}
+
+.termo__feature--5::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -202px;
+}
+
+.termo__feature--6::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0 -257px;
+}
+
+
+@media screen and (max-width: 460px){
+  
+  .clothes__buttons {
+    flex-direction: column;
+    border: none;
+  }
+  
+  .clothes__btn {
+    width: 100%;
+  }
+  
+  .clothes__btn--border {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .btn {
+    text-align: left;
+    padding-left: 25px;
+  }
+  
+  .layers__feature {
+    font-size: 110%;
+  }
+  
+  .layers__caption {
+    margin-bottom: 0;
+  }
+  
+}
+
